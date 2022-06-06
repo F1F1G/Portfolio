@@ -5,7 +5,9 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 
+
 }
+
 .hero{
 	height: 100vh;
 	width: 100%;
@@ -132,6 +134,7 @@ cursor:pointer;
 	height: auto;
 	width: 430px;
 	transition: 2s;
+	margin-right: 20px;
 }
 .about img:hover{
 	transform: scale(1.08);
@@ -194,6 +197,7 @@ button:hover{
 	width: 100%;
 	padding: 100px 0px;
 }
+
 .title h2{
 	color: white;
 	font-size: 75px;
@@ -379,6 +383,10 @@ footer p:nth-child(2){
 	border-radius: 7%;
 	border: 2px solid #ff8a00;
 }
+.pic2{
+	display: none;	
+
+}
 
 @media (max-width:1375px){
 
@@ -389,6 +397,7 @@ footer p:nth-child(2){
 		min-height: 400px;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+
 
 	}
 	.service .box {
@@ -409,6 +418,12 @@ footer p:nth-child(2){
 
 }
 
+@media(max-width:1200px){
+
+	
+
+}
+
 @media (max-width:991px){
 	.content{
 		position: absolute;
@@ -417,12 +432,35 @@ footer p:nth-child(2){
 		transform: translateY(-50%);
 		width: 100%;
 	}
-	.about img{
-		width: 70%;
+
+	nav ul li{
+		display: grid;
+		align-items: center;
+		justify-content: space-between;
+		
 	}
+
 	.about-text{
 		font-size: 20%;
 	}
+	.pic{
+		display: none;
+	}
+	.pic2{
+		display:inline;
+		margin-bottom: 2em;
+		width: 20%;
+		position:relative;
+		left: 25%;
+		
+	}
+	.hero{
+
+		background-image: none;
+		background-size: cover;
+		background-position: center;
+		background-color: #000;
+}
 
 
 }
@@ -431,10 +469,18 @@ footer p:nth-child(2){
 @media (max-width:768px){
 
 
+
 }
 
 
 @media (max-width:450px){
-
-
+.content{
+	margin-top: 4em;
+}
+.content h1 {
+	font-size: 4em;
+}
+.content h3 {
+	font-size: 1em;
+}
 }
