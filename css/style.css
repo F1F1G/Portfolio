@@ -7,6 +7,10 @@
 
 
 }
+body{
+	width:100vw;
+	overflow-x: hidden;
+}
 
 .hero{
 	height: 100vh;
@@ -56,7 +60,7 @@ nav ul li a:hover{
 	background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 	color: white;
 	text-decoration: none;
-	border: 2px solid transparent;
+
 	font-weight: bold;
 	padding: 10px 25px;
 	border-radius: 30px;
@@ -81,6 +85,12 @@ h3{
 	color: white;
 	font-size: 25px;
 	margin-bottom: 50px;
+}
+h2{
+	position: inherit;
+	display: flex;
+	text-align: center;
+	
 }
 h4{
 	color: rgba(255, 233, 204, 0.8);
@@ -126,12 +136,11 @@ cursor:pointer;
 }
 
 .about{
-	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
 }
 .about img{
-	height: auto;
+
 	width: 430px;
 	transition: 2s;
 	margin-right: 20px;
@@ -175,7 +184,6 @@ button{
 	background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 	color: white;
 	text-decoration: none;
-	border: 2px solid transparent;
 	font-weight: bold;
 	padding: 13px 30px;
 	border-radius: 30px;
@@ -189,20 +197,19 @@ button:hover{
 
 .service{
 	background: #101010;
-	width: 100%;
 	padding: 100px 0px;
 }
 .service1{
 	background: #101010;
-	width: 100%;
 	padding: 100px 0px;
 }
 
 .title h2{
+	position: absolute;
 	color: white;
 	font-size: 75px;
 	width: 1130px;
-	margin: 30px auto;
+	left:45%;
 	text-align: center;
 }
 .box{
@@ -252,8 +259,6 @@ h5{
 	overflow: auto;
 	scrollbar-color: black;
 	border:1px solid #191919;
-
-
 }
 .card .button{
 	background-color:#f98500;
@@ -387,6 +392,15 @@ footer p:nth-child(2){
 	display: none;	
 
 }
+.service1 .title h2{
+	position:relative;
+	text-align: center;
+}
+.service .title h2{
+	position:relative;
+	text-align: center;
+	left:43%;
+}
 
 @media (max-width:1375px){
 
@@ -395,19 +409,15 @@ footer p:nth-child(2){
 		justify-content: center;
 		align-items: center;
 		min-height: 400px;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-
-
 	}
+
 	.service .box {
 		display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
 	justify-content: center;
 	align-items: center;
 	align-self: center;
     justify-self: center;
+	
 	}
 	.card{
 		display: grid;
@@ -461,6 +471,15 @@ footer p:nth-child(2){
 		background-position: center;
 		background-color: #000;
 }
+.service1 .title h2{
+	position:relative;
+	text-align: center;
+	left: 32%;
+}
+.service .title h2{
+	position:relative;
+	text-align: center;
+	left:20%;
 
 
 }
@@ -482,5 +501,6 @@ footer p:nth-child(2){
 }
 .content h3 {
 	font-size: 1em;
+}
 }
 }
